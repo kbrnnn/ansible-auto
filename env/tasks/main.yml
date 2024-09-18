@@ -3,8 +3,10 @@
 # - name: apt update
 #   shell: apt update
 
-- name: delete repo if exists
-  shell: rm -R /var/lib/jenkins/workspace/firstBuild/BirthDateAppFlask/
+- name: Delete repo if it exists
+  file:
+    path: /var/lib/jenkins/workspace/firstBuild/BirthDateAppFlask/
+    state: absent
 
 - name: clone repo
   shell: git clone https://github.com/nathanforester/BirthDateAppFlask.git
