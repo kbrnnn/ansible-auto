@@ -2,7 +2,7 @@ all:
   children:
     bazinga:
       hosts:
-        172.31.44.207:
+        172-31-21-234:
   
   vars:
     ansible_user: ubuntu
