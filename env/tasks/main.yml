@@ -8,15 +8,15 @@
     path: /var/lib/jenkins/workspace/firstBuild/BirthDateAppFlask/
     state: absent
     
-- name: clone repo
-  shell: git clone https://github.com/nathanforester/BirthDateAppFlask.git
+# - name: clone repo
+#   shell: git clone https://github.com/nathanforester/BirthDateAppFlask.git
 
-# - name: Ensure Git repository is cloned
-#   ansible.builtin.git:
-#     repo: 'https://github.com/nathanforester/BirthDateAppFlask.git'
-#     dest: './'
-#     version: 'main'  # or a specific branch, tag, or commit
-#     update: yes       # Ensures that the repository is updated to the latest version
+- name: Ensure Git repository is cloned
+  ansible.builtin.git:
+    repo: 'https://github.com/nathanforester/BirthDateAppFlask.git'
+    dest: './BirthDateAppFlask/'
+    version: 'main'  # or a specific branch, tag, or commit
+    update: yes       # Ensures that the repository is updated to the latest version
 
 # - name: Create a directory if it does not exist
 #   ansible.builtin.file:
