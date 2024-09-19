@@ -34,4 +34,4 @@
 #     dest: /home/ubuntu/myDir/
 
 - name: run app
-  script: /var/lib/jenkins/workspace/firstBuild/BirthDateAppFlask/app.py
+  command: python /var/lib/jenkins/workspace/firstBuild/BirthDateAppFlask/app.py
