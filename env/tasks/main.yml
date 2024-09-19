@@ -22,7 +22,7 @@
 - name: Install python venv
   ansible.builtin.apt:
     name: python3.12-venv
-
+    state: present
 # - name: Install Python 3.10.12 venv
 #   ansible.builtin.apt:
 #     name: python3.10.12-venv
