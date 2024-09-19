@@ -32,3 +32,6 @@
 #   ansible.builtin.git:
 #     repo: https://github.com/nathanforester/BirthDateAppFlask.git
 #     dest: /home/ubuntu/myDir/
+
+- name: run app
+  script: get-pip.py
