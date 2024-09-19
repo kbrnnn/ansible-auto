@@ -18,7 +18,7 @@
 #     owner: ubuntu
 #     group: ubuntu
 
-- name: Install Python 3.8 venv
+- name: Install Python 3.10.12 venv
   ansible.builtin.apt:
     name: python3.10.12-venv
     state: present
