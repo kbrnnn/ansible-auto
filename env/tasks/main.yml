@@ -18,9 +18,12 @@
 #     owner: ubuntu
 #     group: ubuntu
 
-- name: Install python venv
+- name: Install Python 3.8 venv
   ansible.builtin.apt:
-    name: python3.12-venv
+    name: python3.10.12-venv
+    state: present
+    update_cache: yes
+
 
 # - name: add safe repo using shell
 #   shell: config --global --add safe.directory /home/ubuntu/myDir
